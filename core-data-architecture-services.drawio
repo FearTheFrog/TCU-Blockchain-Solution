@@ -1,0 +1,49 @@
+<mxfile host="app.diagrams.net" modified="2023-09-12T13:40:58.704Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="XBLURnOGpm4lpTwhPJ95" version="21.6.6">
+  <diagram name="Page-1" id="_j7cMBsXslMb5j7FU_3M">
+    <mxGraphModel dx="1440" dy="1100" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hyAJ3JvezEniaCnfEuIy-1" target="hyAJ3JvezEniaCnfEuIy-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hyAJ3JvezEniaCnfEuIy-1" target="hyAJ3JvezEniaCnfEuIy-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hyAJ3JvezEniaCnfEuIy-1" target="hyAJ3JvezEniaCnfEuIy-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-1" value="Oil Core Data Infra&lt;br&gt;(Structured, unstructured, semi-structured data)&lt;br&gt;[SQL, noSQL, .csv, .xlsx, .parquet]" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="490" width="370" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.42;entryY=0.021;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="hyAJ3JvezEniaCnfEuIy-2" target="hyAJ3JvezEniaCnfEuIy-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-2" value="MBLDW&lt;br&gt;(RDBMS&lt;br&gt;Postgres)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="395" y="660" width="65" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-4" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;type &lt;span style=&quot;color: #4ec9b0;&quot;&gt;FlowMeterRecord&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;struct&lt;/span&gt; {&lt;/div&gt;&lt;div&gt;    clientID        uuid.UUID &lt;span style=&quot;color: #ce9178;&quot;&gt;`json:&quot;clientID&quot;`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    Time            &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;  &lt;span style=&quot;color: #ce9178;&quot;&gt;`json:&quot;time&quot;`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    StartTime       &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;  &lt;span style=&quot;color: #ce9178;&quot;&gt;`json:&quot;start-time&quot;`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    EndTime         &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;  &lt;span style=&quot;color: #ce9178;&quot;&gt;`json:&quot;end-time&quot;`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    Density         &lt;span style=&quot;color: #4ec9b0;&quot;&gt;float64&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;`json:&quot;density&quot;`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    Temperature     &lt;span style=&quot;color: #4ec9b0;&quot;&gt;float64&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;`json:&quot;temperature&quot;`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    NetBarrels      &lt;span style=&quot;color: #4ec9b0;&quot;&gt;float64&lt;/span&gt; &lt;span style=&quot;color: #ce9178;&quot;&gt;`json:&quot;net-barrels&quot;`&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="810" width="370" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-5" value="GITR Document&lt;br&gt;Store&lt;br&gt;(S3/object storage)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="640" y="660" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-7" value="Core Services&lt;br&gt;(internal/external)&lt;br&gt;[client interface, analytics, sandbox/labs]" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="450" y="270" width="190" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-10" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;type &lt;span style=&quot;color: #4ec9b0;&quot;&gt;ClientDetails&lt;/span&gt; &lt;span style=&quot;color: #569cd6;&quot;&gt;struct&lt;/span&gt; {&lt;/div&gt;&lt;div&gt;    ID               uuid.UUID&lt;/div&gt;&lt;div&gt;    ClientName       &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    OrganizationName &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;    ContactEmail     &lt;span style=&quot;color: #4ec9b0;&quot;&gt;string&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="980" width="250" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-11" value="&lt;h1&gt;Off Grid SCADA Data Miner&lt;/h1&gt;&lt;p&gt;Collected via oil-client node service messaged through nats.io&lt;/p&gt;&lt;p&gt;Stored in relational database and flat .csv for external integration&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="660" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-12" value="&lt;h1&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;GITR Model&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;line-height: 60%;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 12px; font-weight: normal;&quot;&gt;Collected landmen document dataset. Train a tailored document model for automated reporting and analysis of mineral rights, et al.&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="660" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="hyAJ3JvezEniaCnfEuIy-13" value="GIS data???" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="510" y="665" width="70" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
