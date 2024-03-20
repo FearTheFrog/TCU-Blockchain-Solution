@@ -1,4 +1,4 @@
-# SCADA Blockchain Provenance & Data Network Fabric
+# SCADA Blockchain Provenance & Data Network Fabric 
 
 Use-Case: Stream SCADA ICS Flows with Blockchain Provenance to Data Center in Texas
 
@@ -55,12 +55,17 @@ flowchart TD
 
 
 Team:
-- Tobalo
+- Tobalo Torres-Valderas
 - Dr. Ed Ipser
 - John Kohn
+- Ian Valderas
+- Abel Bustamante
+- Kelly Slaughter
 
 
 Sponsors:
-- TCU
+- TCU - CS Dept & Neeley
 - Oracle
 - Yeetum
+- FWTX DAO
+- Texas Blockchain Council
